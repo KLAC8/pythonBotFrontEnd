@@ -1,4 +1,3 @@
-// main.js
 function addMessage(message, isUser) {
     const chatContainer = document.getElementById('chat-container');
     const messageDiv = document.createElement('div');
@@ -18,7 +17,8 @@ async function sendMessage() {
         inputElement.disabled = true;
 
         try {
-            const response = await fetch('/chat', {
+            // Update the URL to point to your Netlify backend (adjust <your-netlify-site>)
+            const response = await fetch('https://pythonbot.netlify.app/.netlify/functions/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
