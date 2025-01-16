@@ -18,7 +18,7 @@ async function sendMessage() {
 
         try {
             // Update the URL to point to your Netlify backend (adjust <your-netlify-site>)
-            const response = await fetch('https://pythonbot.netlify.app/.netlify/functions/chat', {
+            const response = await fetch('https://6788a917ea6ad71e8c46eed8--pythonbot.netlify.app/.netlify/functions/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
